@@ -12,7 +12,7 @@
   .header {
     padding: 80px;
     text-align: center;
-    background: #1abc9c;
+    background: #e65b5b;
     color: white;
   }
   
@@ -114,4 +114,7 @@
   .footer ul {
     list-style-type: none;
   }
-  
+  .main h1 {
+    text-align: center;
+    color: #ea4444;
+  }
