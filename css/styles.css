@@ -111,3 +111,7 @@
       width: 100%;
     }
   }
+  .footer ul {
+    list-style-type: none;
+  }
+  
