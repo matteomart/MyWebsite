@@ -59,6 +59,7 @@ h2 {
 
 .section {
     margin: 30px;
+    text-align: center;
 }
 
 .section h3 {
@@ -97,4 +98,22 @@ ul.skills li {
 
 ul.skills li:last-child {
     margin-right: 0;
+}
+.skills li:hover {
+    background-color: #e65b5b;
+}
+.download-btn {
+    background-color: white;
+    border: 3px solid black;
+    color: #333;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+}
+.download-btn:hover {
+    background-color: #e65b5b;
 }
