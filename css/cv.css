@@ -99,9 +99,8 @@ ul.skills li {
 ul.skills li:last-child {
     margin-right: 0;
 }
-.skills li:hover {
-    background-color: #e65b5b;
-}
+
+
 .download-btn {
     background-color: white;
     border: 3px solid black;

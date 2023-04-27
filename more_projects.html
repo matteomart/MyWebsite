@@ -23,16 +23,47 @@
         <p>Student industrial design</p>
     </div>
     <div class="projecten">
-        <h1>Samsung Solve for tommorow</h1>
-        <img src="fotos/samsug.jpg" alt="Samsung">
-        <p>We created AR glasses to shop in the supermarket. The subject of this project was to work with sustainability. We created these glasses to inform the consumer while shopping about the impact of certain products and where this impact comes from.</p>
-        <h1>Industrial Production</h1>
-        <img src="fotos/box.jpg" alt="box" >
-        <p>For the course Industrial production we have to design a speaker using some techniques we learned such as: thermoforming, 3D-printing,...</p>
-        
-
+        <div class="project-nav">
+            <button id="samsung-btn" class="active">Samsung Solve for Tomorrow</button>
+            <button id="industrial-btn">Industrial Production</button>
+        </div>
+        <div id="samsung" class="project-content">
+            <h1>Samsung Solve for Tomorrow</h1>
+            <img src="fotos/samsug.jpg" alt="Samsung">
+            <p>We created AR glasses to shop in the supermarket. The subject of this project was to work with
+                sustainability. We created these glasses to inform the consumer while shopping about the impact of
+                certain products and where this impact comes from.</p>
+        </div>
+        <div id="industrial" class="project-content" style="display: none;">
+            <h1>Industrial Production</h1>
+            <img src="fotos/box.jpg" alt="box">
+            <p>For the course Industrial production we have to design a speaker using some techniques we learned such
+                as: thermoforming, 3D-printing,...</p>
+        </div>
     </div>
-    
+    </div>
+    <script>
+        var samsungBtn = document.getElementById("samsung-btn");
+        var industrialBtn = document.getElementById("industrial-btn");
+        var samsung = document.getElementById("samsung");
+        var industrial = document.getElementById("industrial");
+
+        samsungBtn.addEventListener("click", function () {
+            samsung.style.display = "block";
+            industrial.style.display = "none";
+            samsungBtn.classList.add("active");
+            industrialBtn.classList.remove("active");
+        });
+
+        industrialBtn.addEventListener("click", function () {
+            samsung.style.display = "none";
+            industrial.style.display = "block";
+            industrialBtn.classList.add("active");
+            samsungBtn.classList.remove("active");
+        });
+    </script>
+
 
 </body>
- </html>
+
+</html>
