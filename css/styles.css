@@ -69,8 +69,6 @@ body {
   padding: 20px;
 }
 
-
-
 .footer ul {
   list-style-type: none;
 }
@@ -80,7 +78,6 @@ body {
   color: #ea4444;
 }
 .footer {
-  /* Remove the padding property */
   text-align: center;
   background: #ddd;
 }
